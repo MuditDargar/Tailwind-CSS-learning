@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+    <div class="bg-white p-[2rem] rounded-lg shadow-md w-[20rem]">
+        <h2 class="text-2xl font-semibold mb-[1rem]">Login</h2>
+        <form>
+            <div class="mb-4">
+                <label for="username" class="block text-slate-500 text-sm mb-[0.5rem]">Username</label>
+                <input type="text" id="username" name="username"
+                    class="border border-gray-300 p-2 w-full rounded focus:outline-none focus:border-blue-400"
+                    placeholder="Enter your username" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-600 text-sm mb-2">Password</label>
+                <input type="password" id="password" name="password"
+                    class="border border-gray-300 p-[0.5rem] w-full rounded focus:outline-none focus:border-blue-400"
+                    placeholder="Enter your password" required>
+            </div>
+            <button type="submit"
+                class="bg-blue-500 text-white p-[0.5rem] rounded hover:bg-red-700 focus:outline-none focus:ring focus:border-blue-300 px-4 mx-[5rem]">
+                Login
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
